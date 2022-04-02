@@ -2,7 +2,7 @@
 
 This project aims to automate the content production process in instagram. The tool edits the image by applying text and styles to the background of your choice and posts to the logged in Instagram account.
 
-![Example](./assets/all-styles.png)
+![Example](./assets/banner.png)
 
 ## Dependencies
 
