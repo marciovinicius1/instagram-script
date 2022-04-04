@@ -82,7 +82,7 @@ export default async function makeCarousel() {
             const spacingSizesLines = {
               1: "-30",
               2: "30",
-              3: "130",
+              3: "180",
             };
           
             const spacingSizesTitle = {
@@ -197,7 +197,7 @@ export default async function makeCarousel() {
               spacingSizesLines[Math.min(titleTextArray.length, 2)];
 
             await $`convert -size 930x930 canvas:none -gravity center \
-            -font ${antonFont} -fill #efd607  -pointsize 80 -interline-spacing -25 -annotate +0${spacingSizesByAmountOfTitle} @tmp/titletext.txt \
+            -font ${antonFont} -fill #efd607  -pointsize 80 -interline-spacing 0 -annotate +0${spacingSizesByAmountOfTitle} @tmp/titletext.txt \
             -font ${robotoFont} -fill white  -weight ExtraBold  -pointsize 40 -interline-spacing 0 -annotate +0+${spacingSizesByAmountOfLines} @tmp/subtitletext.txt \
             ${overlayText}`
               
